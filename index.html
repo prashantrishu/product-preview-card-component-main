@@ -119,15 +119,9 @@
       border-radius: 5px;
       margin-top:20px;
     }
-    .imagewrapper {
-      height: 200px;
-      width: 338px;
-    }
+    
     .img {
       border-radius: 5px 5px 0 0;
-      max-height: 200px;
-      max-width: 100%;
-      width: 338px;
     }
     }
     @media  (min-width: 601px){
@@ -147,7 +141,11 @@
  <main class="wrapper">
   <div class="grid">
     <div class="imagewrapper">
-      <img class="img" src="./images/image-product-desktop.jpg" alt="Gabriell Essence EAU De Parfum"/>
+      <picture>
+        <source  srcset="./images/image-product-mobile.jpg" media="(max-width:600px)">
+        <img class="img" src="./images/image-product-desktop.jpg" alt="Gabriell Essence EAU De Parfum"/>
+      </picture>
+      
     </div>
     <div class="details">
       <h3>PERFUME</h3>
